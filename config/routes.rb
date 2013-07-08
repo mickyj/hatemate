@@ -1,4 +1,10 @@
 Hatemate::Application.routes.draw do
-  resources :users, :ratings, :hates
+  root :to => 'users#index'
+
+
+
+  resources :users, :ratings, :hates, :about
+
+
 end
 

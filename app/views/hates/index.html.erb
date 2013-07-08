@@ -2,7 +2,8 @@
 <% @hates.each do |hate| %>
   <li>
     <ul>
-
+      <li><%= link_to(hate.user.username, user_path(hate.user.id) )  %> </li>
+      <li><%= image_tag(hate.user.image) %>
       <li><%= hate.category %></li>
       <li><%= hate.post %></li>
       <li><%= hate.hate_rate %></li>
