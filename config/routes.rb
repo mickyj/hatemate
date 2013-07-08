@@ -1,7 +1,7 @@
 Hatemate::Application.routes.draw do
-  root :to => 'users#index'
+  devise_for :users
 
-
+  root :to => 'hates#index'
 
   resources :users, :ratings, :hates, :about
 

@@ -1,0 +1,11 @@
+
+<ol>
+<% @hates.each do |hate| %>
+  <li>
+    <ul>
+      <li><%= link_to(hate.user.id, user_path(hate.user.id) )  %> </li>
+      <li><%= rating.hate_up %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>
