@@ -1,0 +1,12 @@
+<ol>
+<% @hates.each do |hate| %>
+  <li>
+    <ul>
+
+      <li><%= hate.category %></li>
+      <li><%= hate.post %></li>
+      <li><%= hate.hate_rate %></li>
+    </ul>
+  </li>
+<% end %>
+</ol>
